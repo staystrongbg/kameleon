@@ -23,22 +23,19 @@ const Navbar = () => {
     <nav
       className={styles.navbar}
       style={{
-        background: height && 'rgba(250,250,250,0.96)',
+        background: height && 'rgba(235,235,235,0.96)',
         color: height && '#121212',
-        boxShadow: height && '2px 2px 8px #111',
+        boxShadow: height && '2px 2px 8px rgb(77,77,77)',
         animation: !height && 'slide 0.3s ease',
       }}
     >
       <div className={styles.navLogo}>
         <Link href='/'>
           <a>
-            {
-              <img
-                src={height ? '/logo5.png' : '/logo_w.png'}
-                alt='kameleon logo'
-              />
-              // <img src='/logo_w.png' alt='kameleon logo' />
-            }
+            <img
+              src={height ? '/logo5.png' : '/logo_w.png'}
+              alt='kameleon logo'
+            />
           </a>
         </Link>
       </div>
@@ -46,13 +43,11 @@ const Navbar = () => {
       {showSidebar && <Sidebar />}
       <div className={styles.links}>
         {links.map(({ link, path, id }, idx) => (
-          <div key={idx}>
+          <div key={idx} id={id && styles.ketering}>
             <Link href={path}>
-              <a style={{ color: height && '#222' }} id={id && styles.ketering}>
-                {link}
-                <div>{id && <Dropdown />}</div>
-              </a>
+              <a style={{ color: height && '#222' }}>{link}</a>
             </Link>
+            {id && <Dropdown />}
           </div>
         ))}
       </div>

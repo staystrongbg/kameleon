@@ -32,42 +32,44 @@ const Footer = ({ color = '#121212' }) => {
         <FaIdCard />
         <h3>Kontakt</h3>
         <p>Za sve informacije, kontaktirajte nas.</p>
-        <h3>Ketering</h3>
-        <div>
-          <span>
-            <FaPhone />
-          </span>
-          <Link href='tel:062 222 132'>
-            <a>062 222 132</a>
-          </Link>
-        </div>
-
-        <h3>Sala</h3>
-        <div>
-          <span>
-            <FaPhone />
-          </span>
-          <Link href='tel:061 30 10 400'>
-            <a>061 30 10 400</a>
-          </Link>
-          <br />
-          <span>
-            <FaPhone />
-          </span>
-          <Link href='tel:069 30 10 400'>
-            <a>069 30 10 400</a>
-          </Link>
-        </div>
-
         <div className={styles.email}>
           <Link href='mailto:keteringkameleon@gmail.com'>
             <a>keteringkameleon@gmail.com</a>
           </Link>
         </div>
+        <div className={styles.usluge}>
+          <div>
+            <h3>Ketering</h3>
+            <span>
+              <FaPhone />
+            </span>
+            <Link href='tel:062 222 132'>
+              <a>062 222 132</a>
+            </Link>
+          </div>
+
+          <div>
+            <h3>Sala</h3>
+            <span>
+              <FaPhone />
+            </span>
+            <Link href='tel:061 30 10 400'>
+              <a>061 30 10 400</a>
+            </Link>
+            <br />
+            <br />
+            <span>
+              <FaPhone />
+            </span>
+            <Link href='tel:069 30 10 400'>
+              <a>069 30 10 400</a>
+            </Link>
+          </div>
+        </div>
         <div className={styles['social-icons']}>
           <Link href='https://www.instagram.com/keteringkameleon2021/'>
             <a>
-              <FaInstagramSquare />
+              <FaInstagramSquare title='Instagram' />
             </a>
           </Link>
         </div>

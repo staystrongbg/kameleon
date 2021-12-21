@@ -2,16 +2,18 @@
 
 .footer {
   color: #121212;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(235, 235, 235);
   padding: 2rem 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
   position: relative;
+  font-size: 0.75em;
   a {
     text-decoration: none;
     color: #121212;
     font-weight: 200;
+    letter-spacing: 1.2px;
   }
   .linkovi {
     .links {
@@ -38,18 +40,21 @@
   }
   svg {
     font-size: 1.5rem;
+    margin-right: 0.5rem;
     fill: $gold;
   }
 
   .kontakt {
     p {
       font-weight: 200;
+      letter-spacing: 1.2px;
     }
     .email {
       margin-top: 1rem;
     }
     .social-icons {
       display: flex;
+      margin: 2rem 0 0.5rem 0;
       svg {
         font-size: 2.5rem;
       }
@@ -59,15 +64,21 @@
   .kontakt,
   .linkovi {
     h3 {
-      margin: 1rem 0 0 0;
+      margin: 2rem 0 0.5rem 0;
+      letter-spacing: 1.6px;
+    }
+    .usluge {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      div {
+        text-align: center;
+        a {
+          margin: 1rem 0;
+        }
+      }
+    }
 
-      letter-spacing: 1.4px;
-    }
-    div {
-      font-size: 1rem;
-      padding: 0.5rem;
-      letter-spacing: 1px;
-    }
     display: flex;
     flex-direction: column;
     align-items: center;

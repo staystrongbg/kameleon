@@ -2,7 +2,7 @@ import styles from '../styles/fs_slider.module.scss';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import { useEffect, useRef, useState } from 'react';
 
-const FsSlider = ({ fsPhotos, controls = null }) => {
+const FsSlider = ({ fsPhotos, controls = false, auto = false }) => {
   let [idx, setIdx] = useState(0);
 
   function slide(dir) {
@@ -14,9 +14,11 @@ const FsSlider = ({ fsPhotos, controls = null }) => {
   }
 
   useEffect(() => {
-    const autoSlide = setInterval(() => {
-      setIdx(idx < fsPhotos.length - 1 ? idx + 1 : 0);
-    }, 4000);
+    if (auto) {
+      const autoSlide = setInterval(() => {
+        setIdx(idx < fsPhotos.length - 1 ? idx + 1 : 0);
+      }, 4000);
+    }
 
     return () => clearInterval(autoSlide);
   }, [idx]);

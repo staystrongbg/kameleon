@@ -1,6 +1,5 @@
 import styles from '../styles/pitajte.module.scss';
-const Pitajte = ({ bg = null }) => {
-  console.log(bg);
+const Pitajte = () => {
   return (
     <div className={styles['pitajte']}>
       <h2>imate pitanje?</h2>

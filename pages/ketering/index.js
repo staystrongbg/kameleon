@@ -79,7 +79,7 @@ const Ketering = () => {
         title='KAMELEON 2021 - Ketering'
         description='ketering za zaposlene, ketering za proslave'
       />
-      <FsSlider fsPhotos={fsKetering} controls />
+      <FsSlider fsPhotos={fsKetering} controls auto />
 
       <div className={styles.fotoContainer}>
         <div className={styles.katInfo}>
