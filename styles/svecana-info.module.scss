@@ -1,0 +1,39 @@
+@import 'variables';
+.fotoContainer {
+  padding: 2rem 1rem;
+
+  .svecanaInfo {
+    width: 100%;
+    background-color: #f4f4f1;
+    padding: 2rem 1rem;
+    .wrapper {
+      height: 100%;
+      width: 60%;
+      margin: auto;
+      h2 {
+        font-size: 40px;
+        color: $main-heading;
+        text-align: left;
+        padding: 2.2rem;
+      }
+      p {
+        padding: 2.2rem;
+        letter-spacing: 0.6px;
+        line-height: 30px;
+        font-weight: 300;
+        font-size: 1.2rem;
+        span {
+          font-size: 30px;
+        }
+      }
+      .telbig {
+        background-color: #121212;
+        border-radius: 10px;
+        padding: 5px 15px;
+        color: $gold;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+@import 'responsive';

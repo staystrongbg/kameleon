@@ -1,0 +1,272 @@
+@media only screen and (max-width: 1600px) {
+  .hero {
+    .wrapper {
+      .cLogo {
+        width: 200px;
+        height: 200px;
+        z-index: 2;
+        h1 {
+          font-size: 3rem;
+        }
+        small {
+          font-size: 26px;
+        }
+      }
+      .left,
+      .right {
+        .service {
+          height: 100%;
+          width: 100%;
+          h2 {
+            font-size: 2rem;
+          }
+          small {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    height: 120px;
+    .navLogo {
+      width: 120px;
+    }
+    .links {
+      display: none;
+    }
+    .sidebar-menu {
+      color: #fff;
+      display: flex;
+      z-index: 999;
+      cursor: pointer;
+    }
+  }
+  .hero {
+    .wrapper {
+      flex-direction: column;
+
+      .cLogo {
+        width: 160px;
+        height: 160px;
+        small {
+          font-size: 16px;
+        }
+      }
+      .left,
+      .right {
+        width: 100%;
+        .service {
+          h1 {
+            font-size: 2rem;
+          }
+          small {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    .navLogo {
+      display: none;
+    }
+    .phone h2 {
+      font-size: 1.3rem;
+    }
+  }
+  .fotoContainer {
+    flex-direction: column;
+    width: 100% !important;
+    position: relative;
+
+    .katInfo {
+      padding: 0;
+      margin-bottom: 40px;
+      h2 {
+        letter-spacing: 1px;
+        font-size: 26px !important;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 26px;
+        letter-spacing: 0.4px;
+      }
+    }
+    .gallery {
+      .galleryItem {
+        width: 98%;
+        margin: auto;
+      }
+    }
+
+    .keteringTip {
+      padding: 0 !important;
+      // flex-direction: column;
+      flex-wrap: wrap;
+      .keteringItem {
+        width: 140px;
+        height: 140px;
+      }
+    }
+  }
+  .modal svg {
+    right: 1rem;
+  }
+  .salaInfo .infoText p a {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .top {
+    #sala {
+      .fsSlider {
+        .slideContainer {
+          .multiple-image-container {
+            .clip {
+              clip-path: polygon(0% 40%, 100% 60%, 100% 10000%);
+            }
+            // flex-direction: column;
+            // clip-path: polygon(40% 0%, 100% 0%, 100% 300%);
+          }
+          .title {
+            h1 {
+              font-size: 3rem !important;
+            }
+            small {
+              font-size: 2rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal img {
+    width: 95%;
+    height: auto !important;
+  }
+
+  .photo-slider {
+    h2 {
+      font-size: 2rem;
+    }
+    .photos {
+      overflow-x: scroll;
+      .img-slides {
+        height: 200px;
+      }
+      .btn-container {
+        display: none;
+      }
+    }
+  }
+  .info {
+    .about {
+      width: 100%;
+      padding: 2rem 0;
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+    .salaInfo {
+      flex-direction: column-reverse;
+      &:nth-child(2n + 1) {
+        flex-direction: column-reverse;
+      }
+      .infoText {
+        width: 100%;
+        padding: 2rem 0;
+        button {
+          cursor: pointer;
+          padding: 5px 10px;
+          font-size: 0.9rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 26px;
+        }
+      }
+      .infoImage {
+        width: 100%;
+      }
+    }
+    .ketering {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .pitajte {
+    h2 {
+      font-size: 2rem;
+    }
+    .form {
+      width: 100%;
+      button {
+        padding: 5px 10px;
+        width: 100px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .fotoContainer {
+    .keteringTip {
+      .keteringItem {
+        width: 200px;
+        height: 200px;
+        .content h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .keteringItems .keteringKategorija {
+    font-size: 30px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+// .svecanaInfo {
+//   .wrapper {
+//     h2 {
+//       font-size: 30px;
+//     }
+//     p {
+//       font-size: 1rem;
+//     }
+//     .telBig {
+//       display: inline-block;
+//     }
+//   }
+// }
+
+@media (max-width: 1100px) {
+  .fotoContainer {
+    .svecanaInfo {
+      .wrapper {
+        width: 100%;
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

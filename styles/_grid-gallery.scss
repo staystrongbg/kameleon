@@ -1,0 +1,67 @@
+.gallery {
+  margin: 2rem 0;
+  columns: 300px 4;
+  column-gap: 10px;
+}
+
+.gallery-item {
+  position: relative;
+  background: transparent;
+  margin-bottom: 5px;
+  overflow: hidden;
+  cursor: zoom-in;
+  width: 100%;
+  height: 100%;
+  img {
+    transition: all ease 0.5s;
+    width: 100%;
+    height: 100%;
+  }
+  .opis-jela {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s 0.2s;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      letter-spacing: 1.1px;
+    }
+    p {
+      font-size: 1rem;
+      letter-spacing: 0.6px;
+      line-height: 22px;
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.25);
+      // filter: blur(0.4rem);
+    }
+    .img-overlay {
+      visibility: visible;
+    }
+  }
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: zoomIn 0.3s ease;
+  img {
+    height: 95%;
+  }
+}

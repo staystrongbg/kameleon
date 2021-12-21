@@ -1,0 +1,40 @@
+@import 'ketering_info.module.scss';
+.gallery {
+  margin: 2rem 0;
+  columns: 300px 4;
+  column-gap: 10px;
+}
+
+.galleryItem {
+  position: relative;
+  background: transparent;
+  margin-bottom: 5px;
+  overflow: hidden;
+  cursor: zoom-in;
+  img {
+    transition: all ease 0.5s;
+    width: 100%;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.25);
+      // filter: blur(0.4rem);
+    }
+    .imgOverlay {
+      visibility: visible;
+    }
+  }
+}
+
+.keteringItems {
+  position: relative;
+
+  .keteringKategorija {
+    font-size: 40px;
+    text-align: center;
+    color: $main-heading;
+    padding: 2rem;
+  }
+}
+@import 'responsive';

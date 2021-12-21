@@ -1,0 +1,26 @@
+@import 'variables';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+  background-color: $light-primary;
+  overflow-x: hidden;
+}
+
+.straight-line {
+  height: 2px;
+  background: $gold;
+  width: 60px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,66 @@
+@import 'variables';
+
+.photo-slider {
+  padding: 2rem 0;
+  background-color: #fff;
+  overflow: hidden;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    letter-spacing: 1.4px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $main-heading;
+  }
+  .photos {
+    position: relative;
+
+    .img-slides {
+      transition: ease all 0.5s;
+      height: 200px;
+      margin-top: 2rem;
+      background-color: #fff;
+      display: flex;
+      position: relative;
+      img {
+        height: 100%;
+        min-width: 300px;
+        object-fit: cover;
+        margin: 0 5px;
+        transition: all ease 1s;
+        cursor: zoom-in;
+        &:hover {
+          transform: scale(1.1);
+          margin: 0 15px;
+        }
+      }
+    }
+    .btn-container {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      visibility: hidden;
+      .btn-right,
+      .btn-left {
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 50%;
+        border: 0;
+        color: $gold;
+        opacity: 0.6;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: visible;
+      }
+    }
+  }
+}

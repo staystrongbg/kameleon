@@ -1,0 +1,78 @@
+@import 'variables';
+
+.footer {
+  color: #121212;
+  background-color: rgb(250, 250, 250);
+  padding: 2rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  position: relative;
+  a {
+    text-decoration: none;
+    color: #121212;
+    font-weight: 200;
+  }
+  .linkovi {
+    .links {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      .link {
+        padding: 0.5rem 0;
+        a {
+          border-bottom: 4px solid transparent;
+          transition: ease 0.2s all;
+          letter-spacing: 1.1px;
+          text-decoration: none;
+          color: #121212;
+          &:hover {
+            border-bottom: 4px solid $gold;
+          }
+        }
+      }
+    }
+  }
+  svg {
+    font-size: 1.5rem;
+    fill: $gold;
+  }
+
+  .kontakt {
+    p {
+      font-weight: 200;
+    }
+    .email {
+      margin-top: 1rem;
+    }
+    .social-icons {
+      display: flex;
+      svg {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .mapa,
+  .kontakt,
+  .linkovi {
+    h3 {
+      margin: 1rem 0 0 0;
+
+      letter-spacing: 1.4px;
+    }
+    div {
+      font-size: 1rem;
+      padding: 0.5rem;
+      letter-spacing: 1px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@import 'responsive';
