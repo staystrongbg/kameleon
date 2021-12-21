@@ -32,11 +32,13 @@ const Navbar = () => {
       <div className={styles.navLogo}>
         <Link href='/'>
           <a>
-            {height ? (
-              <img src='/logo5.png' alt='kameleon logo' />
-            ) : (
-              <img src='/logo_w.png' alt='kameleon logo' />
-            )}
+            {
+              <img
+                src={height ? '/logo5.png' : '/logo_w.png'}
+                alt='kameleon logo'
+              />
+              // <img src='/logo_w.png' alt='kameleon logo' />
+            }
           </a>
         </Link>
       </div>
